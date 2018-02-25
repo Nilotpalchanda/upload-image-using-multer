@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  May Node and Express be with you.
+
+  <ul class="quotes">
+  <% for(var i=0; i<data.length; i++) {%>
+    <li class="quote">
+      Post Title : <span><%= data[i].Post_title %></span> | 
+      Post Comment : <span><%= data[i].Post_comment %></span>
+      |
+      Image : <img src ="<%= data[i].Post_image %>">
+    </li>
+  <% } %>
+  </ul>
+
+  
+</body>
+</html>
